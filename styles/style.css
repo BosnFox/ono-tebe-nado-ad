@@ -10,15 +10,6 @@ body {
     min-width: 320px;
 }
 
-ul, ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 button {
     border: none;
     background: transparent;
@@ -33,57 +24,70 @@ img {
     display: block;
 }
 
-:root {
-    --main-bg-color: #F0F0F0; /* Example: Light grey for page background */
-    --main-text-color: #333333; /* Example: Dark grey for general text */
-    --header-footer-bg: #1A237E; /* Example: Dark blue for header/footer background */
-    --accent-color: #FF00FF; /* Example: A bright accent color for buttons/links */
-    --overlay-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for overlays */
-    /* Add more as you identify them in Figma */
-
-    /* --- Fonts (Replace with YOUR Figma values) --- */
-    --main-font: 'Inter', sans-serif;
-}
-
-body {
-    font-family: var(--main-font);
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    line-height: 1.6;
-    min-width: 320px;
-}
-
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px; /* Adjust horizontal padding based on your Figma */
-}
-
-
 .header {
-    background-color: var(--header-footer-bg);
-    padding: 30px 0; /* Example: Adjust vertical padding from Figma. Horizontal handled by .container */
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+}
+
+.header__links-list {
+    display: flex;
+    list-style: circle;
+    gap: 32px;
+}
+
+.header__links-list-item {
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+
+.header__logo {
+      display: block;
+  justify-self: center;
+  align-self: center;
+  width: 140px;
+}
+
+.header__logo-image {
+width: 100%;
+}
+
+.address {
+  font-style: inherit;
+}
+
+.header__address {
+  justify-self: end;
+  font-style: inherit;
 }
 
 .cover {
-    padding: 80px 0; /* Example: Adjust vertical padding from Figma */
-    margin-bottom: 60px; /* Example: Adjust space below cover from Figma */
+    position: relative;
+    padding: 165px 50px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .lots {
-    background-color: var(--main-bg-color); /* Often same as body, or specific */
-    padding: 60px 0; /* Example: Adjust vertical padding from Figma */
-    margin-bottom: 60px; /* Example: Adjust space below lots from Figma */
-}
-
-.about {
-    background-color: var(--main-bg-color); /* Often same as body, or specific */
-    padding: 60px 0; /* Example: Adjust vertical padding from Figma */
-    margin-bottom: 60px; /* Example: Adjust space below about from Figma */
+    padding: 0 50px;
 }
 
 .footer {
-    background-color: var(--header-footer-bg); /* Use your defined variable, often same as header */
-    color: #fff; /* Footer text often white against a dark background */
-    padding: 40px 0; /* Example: Adjust vertical padding from Figma */
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 50px 80px;
 }
