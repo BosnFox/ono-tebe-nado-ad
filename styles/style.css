@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Raleway ";
     line-height: 1.6;
     min-width: 320px;
 }
@@ -151,7 +151,7 @@ width: 100%;
   border: 1px #FFF solid;
   padding: 14px 32px;
   color: #FFF;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   font-weight: normal;
   font-size: 22px;
   line-height: 1;
