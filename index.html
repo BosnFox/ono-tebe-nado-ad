@@ -1,10 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  </head>
-  <body></body>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="#link-to-home">Главная</a></li>
+                <li><a href="#link-to-lots">Лоты</a></li>
+                <li><a href="#link-to-about">Об аукционе</a></li>
+            </ul>
+        </nav>
+        <a class="header__logo" href="#home">
+            <img src="images/logo.svg" alt="Логотип">
+        </a>
+        <address class="header__address">
+            <p>+9 999 555 5555</p>
+            <p><a href="mailto:info@example.com">info@example.com</a></p>
+            <p>123 Улица, Город, Страна</p>
+        </address>
+    </header>
+
+    <main>
+        <section class="cover">
+            <h1 class="cover__title">
+                Оно тебе надо
+            </h1>
+            <div class="cover__description">
+                <p>
+                    Текст-описание для обложки, который описывает суть проекта.
+                </p>
+                <button type="button" class="button">
+                    Начать
+                </button>
+            </div>
+        </section>
+
+        <section class="lots">
+            <h2 class="lots__title">
+                Лоты
+            </h2>
+            <ul class="lots__cards">
+                <li>
+                    <a href="#lot-1" class="lots__card-link">
+                        <article class="lot-card">
+                            <h3 class="lot-card__title">Заголовок карточки 1</h3>
+                            <div class="lot-card__text">Описание карточки 1.</div>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lot-2" class="lots__card-link">
+                        <article class="lot-card">
+                            <h3 class="lot-card__title">Заголовок карточки 2</h3>
+                            <div class="lot-card__text">Описание карточки 2.</div>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lot-3" class="lots__card-link">
+                        <article class="lot-card">
+                            <h3 class="lot-card__title">Заголовок карточки 3</h3>
+                            <div class="lot-card__text">Описание карточки 3.</div>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <a href="#see-more" class="lots__more-link">
+                Посмотреть больше
+            </a>
+        </section>
+
+        <section class="about">
+            <div class="about__column">
+                <h2 class="about__logo">
+                    <img src="images/about-logo.svg" alt="Логотип About">
+                </h2>
+            </div>
+            <div class="about__column">
+                <h2 class="about__title">
+                    Об аукционе
+                </h2>
+                <p class="about__text">
+                    Текст о том, что такое аукцион, как он работает и почему он важен.
+                </p>
+                <p class="about__text">
+                    Второй абзац текста.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <address class="footer__address">
+            <p>+9 999 555 5555</p>
+            <p><a href="mailto:info@example.com">info@example.com</a></p>
+            <p>123 Улица, Город, Страна</p>
+        </address>
+        <nav class="footer__menu">
+            <ul>
+                <li><a href="#link-to-home">Главная</a></li>
+                <li><a href="#link-to-lots">Лоты</a></li>
+                <li><a href="#link-to-about">Об аукционе</a></li>
+            </ul>
+        </nav>
+        <ul class="footer__social-links">
+            <li><a href="#vk"><img src="images/vk.svg" alt="ВКонтакте"></a></li>
+            <li><a href="#youtube"><img src="images/yt.svg" alt="YouTube"></a></li>
+            <li><a href="#pinterest"><img src="images/pinterest.svg" alt="Pinterest"></a></li>
+        </ul>
+    </footer>
+
+</body>
 </html>
