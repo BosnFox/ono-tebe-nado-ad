@@ -37,7 +37,7 @@ img {
     display: flex;
     list-style: circle;
     padding-left: 0;
-    gap: 32px;
+    gap: 33px;
     width: 391.48px;
     height: 22px;
     top: 133px;
@@ -48,6 +48,7 @@ img {
 
 .header__links-list-item {
     font-size: 18px;
+    white-space: nowrap;
 }
 
 .header__links-list-item:first-child {
@@ -61,7 +62,7 @@ img {
 
 .header__link {
     text-decoration: underline;
-    text-underline-offset: 10px;
+    text-underline-offset: 3px;
 }
 
 .header__link_active {
@@ -72,8 +73,8 @@ img {
     display: block;
     justify-self: center;
     align-self: center;
-    width: 148px;
-    height: 105px;
+    width: 145px;
+    height: 102px;
     top: 92px;
     left: 478px;
 }
@@ -95,6 +96,11 @@ img {
     border: 1px;
     font-size: 18px;
     line-height: 1.35;
+}
+
+.header__address a {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .cover-section {
